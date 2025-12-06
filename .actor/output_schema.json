@@ -1,0 +1,17 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of the Invoice Generator",
+    "properties": {
+        "invoices": {
+            "type": "string",
+            "title": "Generated Invoices",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        },
+        "pdfs": {
+            "type": "string",
+            "title": "PDF Files",
+            "template": "{{links.apiDefaultKeyValueStoreUrl}}/records"
+        }
+    }
+}
+

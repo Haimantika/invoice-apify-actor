@@ -1,0 +1,23 @@
+{
+    "actorSpecification": 1,
+    "name": "invoice-generator",
+    "title": "Professional Invoice Generator",
+    "description": "Generate professional PDF invoices with automated calculations, multi-currency support, and customizable templates. Perfect for businesses, freelancers, and consultants who need to create polished invoices quickly.",
+    "version": "1.0.0",
+    "categories": ["BUSINESS", "PRODUCTIVITY"],
+    "tags": ["invoice", "pdf", "billing", "business", "accounting", "finance", "automation"],
+    "isPublic": true,
+    "seoTitle": "Professional Invoice Generator - Create PDF Invoices Automatically",
+    "seoDescription": "Automate invoice creation with professional PDF generation, multi-currency support, tax calculations, and customizable templates. Perfect for businesses and freelancers.",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "claude-sonnet-4-20250514"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}
+

@@ -1,0 +1,61 @@
+{
+    "title": "Input schema of the Invoice Generator",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "invoices": {
+            "title": "Invoices",
+            "type": "array",
+            "description": "Array of invoice data to generate. Each invoice will produce a separate PDF.",
+            "editor": "json",
+            "prefill": [
+                {
+                    "invoiceNumber": "INV-001",
+                    "invoiceDate": "2024-01-15",
+                    "dueDate": "2024-02-15",
+                    "currency": "USD",
+                    "seller": {
+                        "name": "Acme Corporation",
+                        "address": "123 Business Street",
+                        "city": "New York",
+                        "state": "NY",
+                        "zipCode": "10001",
+                        "country": "USA",
+                        "email": "billing@acme.com",
+                        "phone": "+1-555-0100"
+                    },
+                    "client": {
+                        "name": "Client Company Inc",
+                        "address": "456 Client Avenue",
+                        "city": "Boston",
+                        "state": "MA",
+                        "zipCode": "02101",
+                        "country": "USA",
+                        "email": "ap@client.com"
+                    },
+                    "lineItems": [
+                        {
+                            "description": "Web Development Services",
+                            "quantity": 40,
+                            "unitPrice": 150,
+                            "taxRate": 10,
+                            "discount": 0
+                        },
+                        {
+                            "description": "Hosting Services",
+                            "quantity": 1,
+                            "unitPrice": 500,
+                            "taxRate": 10,
+                            "discount": 50
+                        }
+                    ],
+                    "paymentTerms": "Net 30",
+                    "notes": "Thank you for your business!",
+                    "template": "modern",
+                    "primaryColor": "#007bff"
+                }
+            ]
+        }
+    },
+    "required": ["invoices"]
+}

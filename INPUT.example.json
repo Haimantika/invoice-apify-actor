@@ -1,0 +1,59 @@
+{
+    "invoices": [
+        {
+            "invoiceNumber": "INV-2024-001",
+            "invoiceDate": "2024-01-15",
+            "dueDate": "2024-02-14",
+            "currency": "USD",
+            "seller": {
+                "name": "Acme Corporation",
+                "address": "123 Business Street",
+                "city": "New York",
+                "state": "NY",
+                "zipCode": "10001",
+                "country": "United States",
+                "email": "billing@acme.com",
+                "phone": "+1 (555) 123-4567",
+                "taxId": "12-3456789"
+            },
+            "client": {
+                "name": "Tech Solutions Inc.",
+                "address": "456 Innovation Drive",
+                "city": "San Francisco",
+                "state": "CA",
+                "zipCode": "94102",
+                "country": "United States",
+                "email": "accounts@techsolutions.com",
+                "phone": "+1 (555) 987-6543"
+            },
+            "lineItems": [
+                {
+                    "description": "Web Development Services",
+                    "quantity": 40,
+                    "unitPrice": "150.00",
+                    "taxRate": "8.5",
+                    "discount": "0"
+                },
+                {
+                    "description": "Consulting Services",
+                    "quantity": 10,
+                    "unitPrice": "200.00",
+                    "taxRate": "8.5",
+                    "discount": "200.00"
+                },
+                {
+                    "description": "Project Management",
+                    "quantity": 20,
+                    "unitPrice": "100.00",
+                    "taxRate": "0",
+                    "discount": "0"
+                }
+            ],
+            "paymentTerms": "Net 30 - Payment due within 30 days",
+            "notes": "Thank you for your business! Please remit payment by the due date.",
+            "template": "modern",
+            "primaryColor": "#007bff"
+        }
+    ]
+}
+

@@ -1,0 +1,35 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Generated Invoices",
+            "description": "Overview of all generated invoices",
+            "transformation": {
+                "fields": ["invoiceNumber", "status", "filename", "url"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "invoiceNumber": {
+                        "label": "Invoice Number",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "filename": {
+                        "label": "Filename",
+                        "format": "text"
+                    },
+                    "url": {
+                        "label": "Download PDF",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
+

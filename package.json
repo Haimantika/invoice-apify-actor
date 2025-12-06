@@ -1,0 +1,32 @@
+{
+    "name": "invoice-generator",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Generate professional PDF invoices with automated calculations, multi-currency support, and customizable templates",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.4.2",
+        "axios": "^1.6.0",
+        "crawlee": "^3.13.8",
+        "pdfkit": "^0.15.0"
+    },
+    "devDependencies": {
+        "@apify/eslint-config": "^1.0.0",
+        "eslint": "^9.29.0",
+        "eslint-config-prettier": "^10.1.5",
+        "prettier": "^3.5.3"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix",
+        "test": "echo 'Error: oops, the Actor has no tests yet, sad!' && exit 1"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+}
+
